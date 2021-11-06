@@ -1,5 +1,5 @@
 # C
-Learning-C
+C
 
 https://www.programiz.com/c-programming/online-compiler/
 
