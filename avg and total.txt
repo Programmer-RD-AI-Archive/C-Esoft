@@ -1,5 +1,0 @@
-
-Enter 1st Num : 5
-Enter 2nd Num : 5
-Sum - 10 
-Avg - 5.000000
