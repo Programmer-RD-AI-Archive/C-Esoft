@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int prime(int num)
-{   // 14.5
-    for (int i = 2; i <= num / 2; i++)
+int is_it_a_prime_number(int number)
+{
+    for (int i = 2; i <= number / 2; i++)
     {
-        if (num % i == 0)
+        if (number % i == 0)
         {
             return 0;
         }
@@ -14,8 +14,17 @@ int prime(int num)
 
 int main()
 {
-    int prime_number = 0;
-    printf("Enter a prime number : ");
-    scanf("%d", &prime_number);
-    printf("%d is a %d Prime number (0 = False, 1 = True)", prime_number, prime(prime_number));
+    printf("Check is a Number is a prime number or not \n ");
+    int n, pn_result;
+    printf("Prime Number : ");
+    scanf("%d", &n);
+    pn_result = is_it_a_prime_number(n);
+    if (pn_result == 1)
+    {
+        printf("%d is a prime number", n);
+    }
+    else
+    {
+        printf("%d is not a prime number", n);
+    }
 }
