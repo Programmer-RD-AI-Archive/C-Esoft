@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int x = 1;
-int y = 1;
+int y = 2;
 void add()
 {
     int a = 5;
