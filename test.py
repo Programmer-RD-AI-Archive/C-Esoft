@@ -10,5 +10,3 @@ A = {
 }
 F[1] = 565
 
-// Algebra But Programming
-
