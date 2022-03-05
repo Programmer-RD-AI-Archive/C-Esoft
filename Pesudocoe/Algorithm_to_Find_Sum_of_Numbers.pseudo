@@ -1,0 +1,11 @@
+Program Algorith_to_Find_Sum_of_Number
+    Local Data
+        Total, Current_Number : Integer
+    Begin
+        WHILE Current_Number > 0 DO
+            Display "Enter Number : "
+            Input Current_Number
+            Total = Total + Current_Number
+        Display "Sum = ",Total
+    END
+END Algorith_to_Find_Sum_of_Number

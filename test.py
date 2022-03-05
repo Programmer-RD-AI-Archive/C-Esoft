@@ -1,12 +1,5 @@
-F = {
-    1:"Certain Value",
-    2: "Certain Value",
-    3: "Certain Value",
-}
-A = {
-    1: "Certain Value",
-    2: "Certain Value",
-    3: "Certain Value",
-}
-F[1] = 565
-
+total = 0
+current_number = 0
+while current_number > 0:
+    current_number = input("Number : ")
+    total = current_number + total

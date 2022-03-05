@@ -1,0 +1,22 @@
+Program Find_Most_Marks_Out_of_3_numbers
+    Local Data:
+        Mk1,Mk2,Mk3 : Integer
+        High: Integer
+    Begin
+        Display "Enter Mark 1"
+        Input Mk1
+        Display "Enter Mark 2"
+        Input Mk2
+        Display "Enter Mark 3"
+        Input Mk3
+        If Mk1 > Mk2 Then
+            High = Mk1
+        Else
+            High = Mk2
+        End If
+        IF High < Mk3 Then
+            High = Mk3
+        End If
+        Display "Highest : ",High
+    End
+End Find_Most_Marks_Out_of_3_numbers

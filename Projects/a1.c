@@ -1,10 +1,11 @@
 #include <stdio.h>
-int v[] = {10, 9, 17, 7, 12, 8, 5, 15, 4, 6};
+#define SIZE 9
+int v[SIZE] = {10, 9, 17, 7, 12, 8, 5, 15, 4, 6};
 
 int minVal()
 {
     int min = 0;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < SIZE; i++)
     {
         if (v[i] < min)
         {
@@ -16,7 +17,7 @@ int minVal()
 int maxVal(int v[])
 {
     int max = 0;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < SIZE; i++)
     {
         if (v[i] > max)
         {
@@ -33,6 +34,19 @@ float range1(int v[])
 }
 float range2(int v[])
 {
-    return range1(v);
+    int min = 0;
+    int max = 0;
+    for (int i = 0; i < SIZE; i++)
+    {
+        if (v[i] < min)
+        {
+            min = v[i];
+        }
+        if (v[i] > max)
+        {
+            max = v[i];
+        }
+    }
+    return max - min;
 }
 int main() {}

@@ -1,12 +1,13 @@
 #include <stdio.h>
-
+#define SIZE 5
+int arr[SIZE] = {1, 2, 3, 4, 5};
 int main()
 {
-    int billy[5] = {1, 2, 3, 4, 5};
-    // billy[0] = 959;
-    // billy[1] = 599;
-    // billy[2] = 469;
-    // billy[3] = 569;
-    // billy[4] = 9;
-    printf(billy);
+
+    int iterator, total = 0;
+    for (iterator = 0; iterator < SIZE; iterator++)
+    {
+        total = total + arr[iterator];
+    }
+    printf("%d", total);
 }

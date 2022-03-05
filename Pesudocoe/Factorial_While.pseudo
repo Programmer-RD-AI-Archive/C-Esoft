@@ -1,0 +1,18 @@
+Program Factorial_While
+    Local Data:
+        factorial_number,factorial_total,Iter_factorial,Iter_infinite : Integer
+    Begin
+        WHILE (Iter_infinite == 0)
+            factorial_number = 0
+            factorial_total = 0
+            Iter_factorial = 0
+            Display "Factorial : "
+            Input factorial_number
+            IF (factorial_number == 1) THEN
+                Iter_infinite = 1
+            FOR (Iter_factorial = 1, Iter_factorial <= factorail_number,Iter_factorial++)
+                factorial_total = factorial_total * Iter_factorial
+            END FOR
+            Display "factorial_total : ",factorial_total
+    End
+End Factorial_While
