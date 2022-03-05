@@ -1,0 +1,16 @@
+Program Find_Most_Marks_Out_of_10_numbers_While_Loop
+    Local Data:
+        Mk,High,Iter : Integer
+    Begin
+        Iter = 1
+        High = 1
+        WHILE (Iter < 10) DO
+            Display "Enter Mark 1"
+            Input Mk
+            If Mk > High Then
+                High = Mk
+            End If
+            n = n + 1
+        Display "Highest : ",High
+    End
+End Find_Most_Marks_Out_of_10_numbers_While_Loop

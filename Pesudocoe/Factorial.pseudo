@@ -1,0 +1,12 @@
+Program Factorial
+    Local Data:
+        factorial_number,factorial_total,Iter : Integer
+    Begin
+        Display "Factorial : "
+        Input factorial_number
+        FOR (Iter = 1, Iter <= factorail_number,Iter++)
+            factorial_total = factorial_total * Iter
+        END FOR
+        Display "factorial_total : ",factorial_total
+    End
+End Factorial
